@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Ember Market Smoke Shop | Glass, vapes &amp; events — Demo</title>
+<meta name="description" content="Demo smoke-shop website template by DevGurus. Fictional business for portfolio. Local SEO structure for a retail smoke shop.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["LocalBusiness","Store"],"name":"The Ember Market Smoke Shop","description":"Fictional demo smoke shop used as a DevGurus website template.","url":"https://example.com/work/smoke-shop/","telephone":"+1-555-010-2000","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"100 Demo Blvd","addressLocality":"Elgin","addressRegion":"IL","postalCode":"60123","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":42.035,"longitude":-88.282},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"12:00","closes":"18:00"}],"areaServed":"Elgin, IL"}
+</script>
+<style>
+.demobar{background:#0A0A0A;color:rgba(255,255,255,.72);text-align:center;font:500 11px/1.4 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.15)}
+.demobar a{color:#3BE081;text-decoration:none}
+*{box-sizing:border-box}img,svg{max-width:100%;display:block}
+a{color:inherit}
+:root{--ink:#0B1A1C;--ink2:#0F2224;--ink3:#152C2D;--paper:#F3F1EA;--paper2:#E8E5DA;--mute:rgba(243,241,234,.66);--line:rgba(243,241,234,.13);--open:#3BE081;--open-dk:#15804A;--amber:#F2B84B;--glass:#9FD8E6;--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--serif:Georgia,"Times New Roman",serif;--mono:ui-monospace,Menlo,monospace;--wrap:1120px;--r:16px}
+body{margin:0;background:var(--ink);color:var(--paper);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{width:min(var(--wrap),calc(100% - 40px));margin-inline:auto}
+.kick{display:inline-flex;align-items:center;gap:10px;font:500 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--open);margin:0 0 16px}
+.kick:before{content:"";width:18px;height:1px;background:currentColor}
+h1{font-size:clamp(42px,8vw,96px);line-height:.92;font-weight:800;text-transform:uppercase;letter-spacing:.01em;margin:.1em 0 .4em}
+h1 em,h2 em{font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;color:var(--open)}
+h2{font-size:clamp(32px,5vw,56px);line-height:.95;font-weight:800;text-transform:uppercase;margin:0 0 .6em}
+.lede{font-size:clamp(18px,1.4vw,21px);color:var(--mute);max-width:52ch;line-height:1.5}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--open);color:#06331C;padding:14px 22px;border-radius:999px;font:700 15px/1 var(--sans);text-decoration:none;border:0;margin:6px 8px 6px 0}
+.btn.ghost{background:transparent;color:var(--paper);border:1px solid rgba(243,241,234,.35)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,26,28,.94);backdrop-filter:blur(12px);z-index:5}
+.logo{font:800 14px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
+.navlinks{display:flex;gap:4px;flex-wrap:wrap}
+.navlinks a{color:var(--mute);text-decoration:none;font-size:14px;padding:8px 12px;border-radius:999px}
+.navlinks a:hover{color:var(--paper);background:rgba(255,255,255,.06)}
+.hero{padding:72px 0 88px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.art{aspect-ratio:1;border-radius:var(--r);background:
+  radial-gradient(circle at 70% 30%,rgba(159,216,230,.35),transparent 45%),
+  radial-gradient(circle at 30% 70%,rgba(59,224,129,.2),transparent 50%),
+  linear-gradient(160deg,var(--ink3),var(--ink2));
+  border:1px solid var(--line);position:relative;overflow:hidden}
+.art:after{content:"GLASS";position:absolute;inset:0;display:grid;place-items:center;font:800 64px/1 var(--sans);letter-spacing:.08em;opacity:.12}
+.trust{display:flex;flex-wrap:wrap;gap:10px 20px;list-style:none;padding:0;margin:28px 0 0;font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.trust li:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--open);margin-right:8px;vertical-align:2px}
+.sec{padding:80px 0}.lt{background:var(--paper);color:var(--ink)}.lt .kick{color:var(--open-dk)}.lt .lede{color:rgba(11,26,28,.7)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--ink3);border:1px solid var(--line);border-radius:calc(var(--r)+4px);padding:26px}
+.lt .card{background:#fff;border-color:#DCD8CB}
+.card h3{margin:0 0 8px;font-size:20px;text-transform:uppercase;letter-spacing:.02em}
+.card p{margin:0;color:var(--mute);font-size:15.5px}.lt .card p{color:rgba(11,26,28,.7)}
+.nap{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:start}
+.nap dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:0;font-size:15px}
+.nap dt{font:500 11px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--open)}
+.nap dd{margin:0}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}.lt .faq details{border-color:#DCD8CB}
+.faq summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none}.faq summary::-webkit-details-marker{display:none}
+.faq p{margin:10px 0 0;color:var(--mute)}.lt .faq p{color:rgba(11,26,28,.7)}
+footer{padding:48px 0 28px;border-top:1px solid var(--line);font-size:13px;color:var(--mute)}
+footer a{color:var(--open);text-decoration:none}
+@media(max-width:800px){.hero,.nap,.grid3{grid-template-columns:1fr}.navlinks{display:none}.hero{padding:48px 0}}
+</style></head><body>
+<div class="demobar">Demo template by DevGurus · fictional business · not a live client site</div>
+<div class="wrap">
+<nav><a class="logo" href="#top">Ember Market</a><div class="navlinks"><a href="#shop">Shop</a><a href="#services">What we carry</a><a href="#visit">Visit</a><a href="#faq">FAQ</a><a href="#visit">Hours &amp; map</a></div></nav>
+<section class="hero" id="top">
+<div>
+<p class="kick">Smoke shop near you · Demo</p>
+<h1>Glass, vapes &amp; <em>events</em> off the main drag</h1>
+<p class="lede">A polished retail smoke-shop site built for local search: clear NAP, service categories, FAQ, and a store visit path — the same SEO bones DevGurus ships for restricted-ad retail.</p>
+<p><a class="btn" href="#visit">Plan your visit</a><a class="btn ghost" href="#services">Browse categories</a></p>
+<ul class="trust"><li>LocalBusiness schema</li><li>Hours &amp; NAP</li><li>21+ age note</li><li>Mobile-first</li></ul>
+</div>
+<div class="art" aria-hidden="true"></div>
+</section>
+</div>
+<section class="sec lt" id="services"><div class="wrap">
+<p class="kick">Categories</p>
+<h2>What walks in looking for</h2>
+<div class="grid3">
+<div class="card"><h3>Glass</h3><p>Artist pieces, daily drivers, and clean-station basics — structured as searchable category pages.</p></div>
+<div class="card"><h3>Vapes &amp; devices</h3><p>Device and juice pages aimed at “vape shop near me” and product intent (compliance-aware copy).</p></div>
+<div class="card"><h3>Events</h3><p>Seasonal event landing sections so Maps and organic can pick up “smoke shop events [city]”.</p></div>
+</div>
+</div></section>
+<section class="sec" id="shop"><div class="wrap">
+<p class="kick">On-page SEO</p>
+<h2>Built to rank when <em>ads can’t</em></h2>
+<p class="lede">Meta/Google restrict vape ads. This template leans on Google Business Profile signals, consistent citations, FAQ rich results, and location-aware copy instead of paid traffic.</p>
+<div class="grid3" style="margin-top:28px">
+<div class="card"><h3>Title &amp; meta</h3><p>City + category in the title. Description sells the visit, not a banned claim.</p></div>
+<div class="card"><h3>Schema</h3><p>LocalBusiness + Store JSON-LD with hours, geo, and telephone.</p></div>
+<div class="card"><h3>Internal links</h3><p>Shop → categories → visit → FAQ, so crawlers and shoppers take the same path.</p></div>
+</div>
+</div></section>
+<section class="sec lt" id="visit"><div class="wrap nap">
+<div>
+<p class="kick">Visit</p>
+<h2>Find us</h2>
+<p class="lede">Name, address, phone and hours in one block — the NAP Google and AI assistants need.</p>
+<dl>
+<dt>Name</dt><dd>The Ember Market Smoke Shop <span style="opacity:.6">(fictional demo)</span></dd>
+<dt>Address</dt><dd>100 Demo Blvd, Elgin, IL 60123</dd>
+<dt>Phone</dt><dd>(555) 010-2000</dd>
+<dt>Hours</dt><dd>Mon–Sat 10am–9pm · Sun 12–6pm</dd>
+<dt>Note</dt><dd>21+ only. Valid ID required.</dd>
+</dl>
+</div>
+<div class="card" style="background:#0F2224;color:#F3F1EA;border-color:rgba(243,241,234,.13)">
+<h3 style="color:#3BE081">Service area</h3>
+<p style="color:rgba(243,241,234,.7)">Demo service area: Elgin and nearby Fox Valley. Real builds get unique location pages per storefront.</p>
+<a class="btn" href="../../contact.html" style="margin-top:16px">Ask DevGurus about this template</a>
+</div>
+</div></section>
+<section class="sec" id="faq"><div class="wrap">
+<p class="kick">FAQ</p>
+<h2>Straight answers</h2>
+<div class="faq">
+<details open><summary>Do you ship vapes?</summary><p>Demo copy only. Live shops set shipping and age-gate policy with counsel; the site structure supports a clear policy page.</p></details>
+<details><summary>Are you open late?</summary><p>Hours are listed in the NAP block and schema so Maps and assistants stay accurate.</p></details>
+<details><summary>Is this a real store?</summary><p>No. This is a DevGurus demo template based on smoke-shop site work. Visual system echoes the Glass Market build (dark teal + open accent).</p></details>
+</div>
+</div></section>
+<footer class="wrap">
+<p>Demo template by DevGurus · Inspired by Glass Market smoke-shop site work · <a href="../../portfolio.html">← Back to portfolio</a></p>
+</footer>
+</body></html>
