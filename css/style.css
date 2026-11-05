@@ -137,3 +137,12 @@ footer{background:var(--ink);color:var(--paper);padding:80px 0 30px}.fgrid{displ
 a:not(.btn):not(.logo):not(.ind){text-decoration-color:var(--accent)}
 .back{display:block;width:max-content;margin-bottom:22px}
 .card.hot{margin-bottom:48px}
+
+/* Work & templates grid */
+.workgrid{align-items:stretch}
+.workgrid .card.exp{display:flex;flex-direction:column}
+a.card.linkcard{text-decoration:none;color:inherit;transition:transform .25s var(--ease),border-color .2s}
+a.card.linkcard:hover{transform:translateY(-4px);border-color:var(--accent)}
+a.card.linkcard .pill{margin-top:auto;align-self:flex-start}
+.workgrid .art{height:160px;font-size:22px}
+@media(max-width:900px){.workgrid{grid-template-columns:1fr}}
